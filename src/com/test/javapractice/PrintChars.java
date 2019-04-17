@@ -1,4 +1,4 @@
-package Practice1;
+package com.test.javapractice;
 
 public class PrintChars {
 	public static void main(String args[]){
