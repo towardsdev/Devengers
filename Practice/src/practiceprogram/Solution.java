@@ -1,4 +1,4 @@
-package practiceprogram;
+package src.practiceprogram;
 
 import java.io.*;
 import java.math.*;

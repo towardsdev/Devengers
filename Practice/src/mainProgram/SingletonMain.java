@@ -1,6 +1,6 @@
-package mainProgram;
+package src.mainProgram;
 
-import practiceprogram.Singletonclass;
+import src.practiceprogram.Singletonclass;
 
 public class SingletonMain {
 

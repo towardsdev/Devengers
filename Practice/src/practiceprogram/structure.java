@@ -1,4 +1,4 @@
-package practiceprogram;
+package src.practiceprogram;
 
 public class structure {
 

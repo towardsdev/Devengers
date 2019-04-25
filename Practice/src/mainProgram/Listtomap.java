@@ -1,11 +1,11 @@
-package mainProgram;
+package src.mainProgram;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import practiceprogram.Employee;
+import src.practiceprogram.Employee;
 
 public class Listtomap {
 
