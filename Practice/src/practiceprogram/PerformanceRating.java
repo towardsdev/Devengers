@@ -1,9 +1,5 @@
 package src.practiceprogram;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 import src.mainProgram.EmployeRating;
 
 public class PerformanceRating {
@@ -11,10 +7,10 @@ public class PerformanceRating {
 	private String deliverable = null;
 	private String sports = null;
 	private String outreach = null;
-	int ratA = 5;
-	int ratB = 3;
-	int ratC = 2;
-	int result1 = 0;
+	int ratingAScore = 5;
+	int ratingBScore = 3;
+	int ratingCScore = 2;
+	int sumofratingscore = 0;
 	public String rating = null;
 
 	public PerformanceRating(String deliverable, String outreach, String sports) {
@@ -54,27 +50,25 @@ public class PerformanceRating {
 		char[] ch = result.toCharArray();
 		for (int i = 0; i < result.length(); i++) {
 			if (String.valueOf(ch[i]).equalsIgnoreCase("A")) {
-				result1 = result1 + ratA;
+				sumofratingscore = sumofratingscore + ratingAScore;
 			}
 			if (String.valueOf(ch[i]).equalsIgnoreCase("B")) {
-				result1 = result1 + ratB;
+				sumofratingscore = sumofratingscore + ratingBScore;
 			}
 			if (String.valueOf(ch[i]).equalsIgnoreCase("C")) {
-				result1 = result1 + ratC;
+				sumofratingscore = sumofratingscore + ratingCScore;
 			}
 		}
 
-		if (result1 >= 12) {
+		if (sumofratingscore >= 12) {
 			rating = "1st";
 		}
-		if (result1 <= 11 && result1 >= 8) {
+		if (sumofratingscore <= 11 && sumofratingscore >= 8) {
 			rating = "2nd";
 		}
-		if (result1 <= 7) {
+		if (sumofratingscore <= 7) {
 			rating = "3rd";
 		}
-
-		System.out.println(result1);
 
 		return "Rating of the Employee " + EmployeRating.name + " " + rating;
 
