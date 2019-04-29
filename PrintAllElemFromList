@@ -1,0 +1,34 @@
+package projOne;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PrintAllElemFromList {
+	
+	String name;
+	List <String> lis=new ArrayList<String>();
+	
+	public static void main (String [] args){		
+		PrintAllElemFromList pa=new PrintAllElemFromList();
+		pa.addData("Name0");
+		pa.addData("Name1");
+		pa.addData("Name2");
+		pa.addData("Name3");
+		pa.addData("Name4");
+		pa.showData();
+		
+	}
+	public void addData(String data){
+		lis.add(data);
+		}
+	
+	public void showData(){
+		for (int i=0;i<lis.size();i++){
+			System.out.println(lis.get(i));
+			}
+		System.out.println(lis);
+		
+	}
+	
+
+}
