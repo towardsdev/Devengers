@@ -1,0 +1,33 @@
+package com.java.collections;
+
+public class MovieTicket {
+
+	//private static MovieTicket movie = null;// declared as Private
+	int seats = 100;
+
+//	private MovieTicket() {
+//
+//	}
+
+	public void seatsTicket(int count) {
+		seats = seats - count;
+		System.out.println(seats);
+	}
+//
+//	public static MovieTicket getInstance() {// making it as public static by
+//												// creating new Instance
+//		if (movie == null) {
+//			movie = new MovieTicket();
+//
+//		}
+//		return movie;
+//	}
+
+	public static void main(String args[]) {
+		MovieTicket movie = new MovieTicket();
+		movie.seatsTicket(5);
+		movie.seatsTicket(15);
+		movie.seatsTicket(15);
+
+	}
+}
