@@ -1,0 +1,20 @@
+package projOne;
+
+public class StarPrint {
+	public static void main(String [] args){
+		for (int j=0;j<5;j=j+2){
+			for (int k=0;k<=j;k++){	
+				System.out.print("*");
+				}
+			System.out.println();
+			}
+		
+		for (int i=2;i>=0;i=i-2){
+			for (int l=0;l<=i;l++){	
+				System.out.print("*");
+			}
+			System.out.println();
+			}
+		
+	}
+}
