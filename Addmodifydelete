@@ -1,0 +1,95 @@
+package FirstPackage;
+
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+//Write a program to find the added, modified and deleted items in a list.
+//For example, I have list of string which has A, B and C in it and input list contains A, D, C then A is modified, 
+//D is added and C is modified and B is deleted.
+
+public class Add_modify_delete {
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//AList <String> L1= new ArrayList <String>();
+		
+		List <Integer> L1 = new ArrayList<Integer>();
+		
+	       L1.add(1);
+	       L1.add(2);
+	       L1.add(3);
+	       
+	       System.out.println("Existing - List L1 : " + L1); 
+	       
+	              
+	       int n ,L1size=0 ,L2Size=0;
+
+	       
+	       System.out.println("Enter number of  elements you want to check:");
+	              Scanner s = new Scanner(System.in);
+	               n = s.nextInt();
+	               List <Integer> L2 = new ArrayList<Integer>();
+	               System.out.println("Enter all the elements:");
+	               for(int i=0;i<n;i++) {
+	            	   L2.add(s.nextInt());
+	                   L1size= L1.size();
+	                   L2Size= L2.size();
+	               }
+
+	               	             
+	                 
+	                  
+	                  System.out.println(" Size List L1 : " + L1); 
+	                  
+	                  System.out.println(" Size List L2 : " + L2); 
+
+	                  for (int i = 0; i < L1size;i++)
+	                	  
+	                  {
+	                	  if (L2.contains(L1.get(i)))
+	                	  			{
+	                			  System.out.println(" Modified : " + L1.get(i));   
+	                	  			}
+	                	                 	 
+	                	  else
+	                	  {
+	                	  System.out.println(" Deleted : " + L1.get(i));  
+	                	  }
+	                	  
+	                        			  
+	                	  
+	                		  
+	                		  
+	                  }
+	               
+	                  for (int i = 0; i < L2Size;i++)
+	                	  
+	                  {
+	                	  if (L1.contains(L2.get(i)))
+	                	  			{
+	                			//  System.out.println(" Modified : " + L1.get(i));   
+	                	  			}
+	                	                 	 
+	                	  else
+	                	  {
+	                	  System.out.println(" Added : " + L2.get(i));  
+	                	  }
+	                	             	 
+                			                 	  
+	                		  
+	                		  
+	                  }
+	               
+	               
+	             
+	       
+	       
+	       
+	}
+
+}
