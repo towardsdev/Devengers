@@ -13,15 +13,19 @@ public class Addmodify_classvaraiable {
 
 	static int n,L1size=3 ,L2Size=0;
 	
+	List <String> L1 = new ArrayList<String>();
 	
-	
-			public void aMethod()
-			{
-			List <String> L1 = new ArrayList<String>();
+	public Addmodify_classvaraiable (){
 			L1.add("A");
 			L1.add("B");
 			L1.add("C");
-			System.out.println("Existing - List L1 : " + L1); 
+			System.out.println("Existing - List L1 : " + L1);
+}
+			public void aMethod()
+			{
+			
+			
+			 
 			System.out.println("Enter number of  elements you want to check:");
             Scanner s = new Scanner(System.in);
              n = s.nextInt();
@@ -74,10 +78,6 @@ public class Addmodify_classvaraiable {
 	                  }
 	               
 	               
-	             
-	       
-	       
-	       
-	
+	 
 
 }
