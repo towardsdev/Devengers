@@ -1,8 +1,6 @@
 package src.mainProgram;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 
@@ -16,12 +14,13 @@ public class EmployeRating {
 	public static void main(String[] args) {
 
 		Scanner scan = new Scanner(System.in);
-		List<String> Employee = new ArrayList<String>();
+		System.out.println("Enter Number of Employees");
 		nuofemp = scan.nextInt();
 		for (int i = 0; i < nuofemp; i++) {
 			System.out.println("Enter the Employee name");
 			name = scan.next();
 			System.out.println("Enter the performance details for Employee " + name);
+
 			PerformanceRating pm = new PerformanceRating(scan.next(), scan.next(), scan.next());
 			Map<String, PerformanceRating> Employeem = new HashMap<String, PerformanceRating>();
 

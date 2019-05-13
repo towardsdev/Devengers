@@ -20,29 +20,29 @@ public class PerformanceRating {
 		this.outreach = outreach;
 	}
 
-	public String getDeliverable() {
-		return deliverable;
-	}
-
-	public void setDeliverable(String deliverable) {
-		this.deliverable = deliverable;
-	}
-
-	public String getSports() {
-		return sports;
-	}
-
-	public void setSports(String sports) {
-		this.sports = sports;
-	}
-
-	public String getOutreach() {
-		return outreach;
-	}
-
-	public void setOutreach(String outreach) {
-		this.outreach = outreach;
-	}
+//	public String getDeliverable() {
+//		return deliverable;
+//	}
+//
+//	public void setDeliverable(String deliverable) {
+//		this.deliverable = deliverable;
+//	}
+//
+//	public String getSports() {
+//		return sports;
+//	}
+//
+//	public void setSports(String sports) {
+//		this.sports = sports;
+//	}
+//
+//	public String getOutreach() {
+//		return outreach;
+//	}
+//
+//	public void setOutreach(String outreach) {
+//		this.outreach = outreach;
+//	}
 
 	public String toString() {
 
@@ -69,7 +69,7 @@ public class PerformanceRating {
 		if (sumofratingscore <= 7) {
 			rating = "3rd";
 		}
-
+		System.out.println(sumofratingscore);
 		return "Rating of the Employee " + EmployeRating.name + " " + rating;
 
 	}
