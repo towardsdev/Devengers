@@ -6,7 +6,6 @@ public class SingletonClassExample {
 	private SingletonClassExample(){
 		//Object declaration is blocked
 	}
-	
 	public static SingletonClassExample getSc() {
 		return sc;
 	}
