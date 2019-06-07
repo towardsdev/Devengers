@@ -5,10 +5,10 @@
    xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-   <bean id="HelloWorld" class="com.tutorialspoint.HelloWorld">
+   <bean id="HelloWorld" class="com.tutorialspoint.Spring.HelloWorld">
    	<property name="Message" value="Hello World!" ></property>
    </bean>
-   <bean id="singleton" class="com.tutorialspoint.Spring_Singleton">
+   <bean id="singleton" class="com.tutorialspoint.Spring.Spring_Singleton">
    	<property name="countOfTkts">
    		<value>50</value></property>
    </bean>
